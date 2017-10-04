@@ -5,6 +5,8 @@
  */
 package javaapplication2;
 
+import java.util.Scanner;
+
 /**
  *
  * @author a1620932
@@ -16,6 +18,14 @@ public class JavaApplication2 {
      */
     public static void main(String[] args) {
         System.out.println("Hello Word!");
+        System.out.println("Digite um numero");
+        Scanner scan = new Scanner(System.in);
+        int valor1,valor2,resultado;
+        valor1 = scan.nextInt();
+        System.out.println("Digite outro numero");
+        valor2 = scan.nextInt();
+        resultado = valor1+valor2;
+        System.out.println("SOMA = "+resultado);
     }
     
 }
